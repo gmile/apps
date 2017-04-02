@@ -3,6 +3,7 @@ class SimpleErd < Formula
   homepage "https://github.com/gmile/simple-erd"
   url "https://github.com/gmile/simple-erd/archive/0.1.0.tar.gz"
   head "https://github.com/gmile/simple-erd.git"
+  version "0.1.0"
 
   bottle :unneeded
 
