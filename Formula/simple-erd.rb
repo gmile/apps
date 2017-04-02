@@ -6,7 +6,15 @@ class SimpleErd < Formula
 
   bottle :unneeded
 
+  depends_on "ruby"
+  depends_on "graphviz"
+
   def install
-    bin.install "serd"
+    bin.install "simple-erd"
+    man1.install "man/simple-erd.1"
+  end
+
+  test do
+    system "#{bin}/simple-erd", "--version"
   end
 end
